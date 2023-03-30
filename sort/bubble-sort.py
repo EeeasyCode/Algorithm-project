@@ -10,6 +10,7 @@ for _ in range(20):
 
 print("정렬되기 전 배열: ", rand_arr)
 
+#버블 정렬 알고리즘
 def bubble_sort(arr_data: list) -> list:
     for i in range(len(arr_data)):
         for j in range(1, len(arr_data)-i):
