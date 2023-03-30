@@ -9,7 +9,6 @@ for _ in range(20):
     rand_arr.append(rand_int)
 
 print("정렬되기 전 배열: ", rand_arr)
-
 #선택 정렬 알고리즘
 def selection_sort(arr_data: list) -> list:
     for i in range(len(arr_data)-1):
