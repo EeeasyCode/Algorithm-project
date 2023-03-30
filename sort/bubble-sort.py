@@ -20,4 +20,4 @@ def bubble_sort(arr_data: list) -> list:
     return arr_data
 
 sorted_arr = bubble_sort(rand_arr)
-print(sorted_arr)
+print('정렬 후 배열: ', sorted_arr)
