@@ -1,7 +1,7 @@
 import tools
 
 # random 값이 20개 들어있는 배열 생성
-# rand_arr = tools.make_random_arr(20)
+rand_arr = tools.make_random_arr(20)
 
 def partition(arr_data:list, start:int, end:int):
     i = start
@@ -13,7 +13,6 @@ def partition(arr_data:list, start:int, end:int):
     arr_data[i], arr_data[end] = arr_data[end], arr_data[i]
     return arr_data.index(pivot_data)
         
-data_arr = [31, 8, 48, 73, 11, 3, 20, 29, 65, 15]
 
 def quick_sort(arr_data:list, p:int, r:int):
     if (p < r):
@@ -21,6 +20,6 @@ def quick_sort(arr_data:list, p:int, r:int):
             quick_sort(arr_data, p, q-1)
             quick_sort(arr_data, q+1, r)
 
-quick_sort(data_arr, 0, len(data_arr)-1)
-print(data_arr)
+quick_sort(rand_arr, 0, len(rand_arr)-1)
+print(rand_arr)
     
