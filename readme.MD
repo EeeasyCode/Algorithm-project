@@ -3,5 +3,5 @@
 ## Programming Languege
 
 <br>
-
-    python3
+사용된 언어
+- python3
