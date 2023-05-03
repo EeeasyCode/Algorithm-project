@@ -4,6 +4,7 @@ from collections import deque
 # random 값이 20개 들어있는 배열 생성
 rand_arr = tools.make_random_arr(20)
 
+# Node의 키 값과 자식 노드 NULL로 생성
 class Node:
     def __init__(self, data):
         self.data = data
@@ -12,9 +13,12 @@ class Node:
 
 
 class Binary_Search_Tree:
+    
+    #초기 init
     def __init__(self):
         self.root = None
 
+    # 삽입 
     def insert(self, data):
         if self.root is None:
             self.root = Node(data)
@@ -36,7 +40,8 @@ class Binary_Search_Tree:
                         break
                     else:
                         self.base = self.base.left
-
+                        
+    # 탐색
     def search(self, data):
         self.base = self.root
         while self.base:
@@ -49,7 +54,8 @@ class Binary_Search_Tree:
                 self.base = self.base.right
         print(data, " : 탐색 실패")
         return False
-
+    
+    #
     def delete(self, data):
         self.searched = False
         self.cur_node = self.root
